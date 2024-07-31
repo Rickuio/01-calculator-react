@@ -1,12 +1,12 @@
 import React from 'react';
 import {
+  StatusBar,
   useColorScheme,
+  View,
 } from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-import { CalculatorScreen } from './Screens/CalculatorScreen';
+import { CalculatorScreen } from './presentation/screens/CalculatorScreen';
+import { styles } from './config/theme/app-theme';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -16,7 +16,13 @@ function App() {
   };
 
   return (
-    <CalculatorScreen />
+    <View style={ styles.backgroud}>
+      <StatusBar 
+        barStyle={ 'light-content' }
+        backgroundColor={ 'black' }
+      />
+      <CalculatorScreen />
+    </View>
   );
 }
 
