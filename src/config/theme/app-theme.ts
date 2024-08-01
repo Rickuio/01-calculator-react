@@ -4,6 +4,8 @@ export const colors = {
     darkGray: '#2D2D2D',
     lightGray: '#9B9B9B',
     orange: '#FF9427',
+    lightGreen: '#CDE27C',
+    darkGreen: '#009528',
     textPrimary: 'white',
     textSecondary: '#666666',
     background: '#000000'
@@ -36,5 +38,26 @@ export const styles = StyleSheet.create({
         marginBottom: 50,
         textAlign: 'right',
         fontWeight: '300'
+    },
+    row: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginBottom: 20,
+        paddingHorizontal: 10
+    },
+    button: {
+        height: 80,
+        width: 80,
+        backgroundColor: colors.darkGray,
+        borderRadius: 40,
+        marginHorizontal: 5,
+        justifyContent: 'center'
+    },
+    buttonText: {
+        color: '#EEEEEE',
+        fontSize: 30,
+        fontWeight: '300',
+        padding: 5,
+        textAlign: 'center'
     }
 })
