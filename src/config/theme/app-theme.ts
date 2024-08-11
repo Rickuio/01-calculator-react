@@ -18,11 +18,11 @@ export const styles = StyleSheet.create({
     },
     calculatorContainer:{
         flex: 1,
-        padding: 20,
+        padding: 40,
         justifyContent: 'flex-end'
     },
     calculatorPadd: {
-        paddingHorizontal: 30,
+        paddingHorizontal: 20,
         paddingBottom: 20
     },
     mainResult: {
@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
         width: 80,
         backgroundColor: colors.darkGray,
         borderRadius: 40,
-        marginHorizontal: 5,
+        marginHorizontal: 8,
         justifyContent: 'center'
     },
     buttonText: {
@@ -58,6 +58,11 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: '300',
         padding: 5,
+        textAlign: 'center'
+    },
+    buttonTextMini: {
+        color: '#EEEEEE',
+        fontSize: 12,
         textAlign: 'center'
     }
 })
